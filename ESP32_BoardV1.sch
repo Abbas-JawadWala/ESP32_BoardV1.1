@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date "2020-10-15"
 Rev "v1.1"
@@ -134,8 +134,8 @@ L Device:C C?
 U 1 1 5F80494D
 P 4875 2275
 AR Path="/5F7FDDC6/5F80494D" Ref="C?"  Part="1" 
-AR Path="/5F80494D" Ref="C7"  Part="1" 
-F 0 "C7" H 4990 2321 50  0000 L CNN
+AR Path="/5F80494D" Ref="C6"  Part="1" 
+F 0 "C6" H 4990 2321 50  0000 L CNN
 F 1 "0.1uF" H 4990 2230 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4913 2125 50  0001 C CNN
 F 3 "~" H 4875 2275 50  0001 C CNN
@@ -162,8 +162,8 @@ L Device:C C?
 U 1 1 5F80495A
 P 5225 3900
 AR Path="/5F7FDDC6/5F80495A" Ref="C?"  Part="1" 
-AR Path="/5F80495A" Ref="C8"  Part="1" 
-F 0 "C8" H 5340 3946 50  0000 L CNN
+AR Path="/5F80495A" Ref="C7"  Part="1" 
+F 0 "C7" H 5340 3946 50  0000 L CNN
 F 1 "0.1uF" H 5340 3855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5263 3750 50  0001 C CNN
 F 3 "~" H 5225 3900 50  0001 C CNN
@@ -713,8 +713,8 @@ L Device:C C?
 U 1 1 5F8049B7
 P 4800 3900
 AR Path="/5F7FDDC6/5F8049B7" Ref="C?"  Part="1" 
-AR Path="/5F8049B7" Ref="C6"  Part="1" 
-F 0 "C6" H 4915 3946 50  0000 L CNN
+AR Path="/5F8049B7" Ref="C5"  Part="1" 
+F 0 "C5" H 4915 3946 50  0000 L CNN
 F 1 "10uF" H 4915 3855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4838 3750 50  0001 C CNN
 F 3 "~" H 4800 3900 50  0001 C CNN
@@ -1486,10 +1486,10 @@ Wire Wire Line
 Wire Wire Line
 	3850 6150 4300 6150
 $Comp
-L Device:C_Small C5
+L Device:C_Small C4
 U 1 1 61CDDA04
 P 4300 6250
-F 0 "C5" H 4392 6296 50  0000 L CNN
+F 0 "C4" H 4392 6296 50  0000 L CNN
 F 1 "100uF" H 4392 6205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 4300 6250 50  0001 C CNN
 F 3 "~" H 4300 6250 50  0001 C CNN
@@ -1530,12 +1530,12 @@ IO4
 Wire Wire Line
 	7000 2425 6825 2425
 $Comp
-L Connector:Barrel_Jack_Switch J?
+L Connector:Barrel_Jack_Switch J1
 U 1 1 61D95332
 P 1150 1550
-F 0 "J?" H 1207 1867 50  0000 C CNN
+F 0 "J1" H 1207 1867 50  0000 C CNN
 F 1 "Barrel_Jack_Switch" H 1207 1776 50  0000 C CNN
-F 2 "" H 1200 1510 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1200 1510 50  0001 C CNN
 F 3 "~" H 1200 1510 50  0001 C CNN
 	1    1150 1550
 	1    0    0    -1  
