@@ -17,10 +17,6 @@ Wire Wire Line
 	6825 2325 6975 2325
 Wire Wire Line
 	6825 2125 6975 2125
-Text Label 6975 2325 0    50   ~ 0
-UART0_RXD
-Text Label 6975 2125 0    50   ~ 0
-UART0_TXD
 Wire Wire Line
 	6225 1825 6225 1675
 $Comp
@@ -68,10 +64,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/PMBT2222AYS.pdf" H 2825 62
 	2    2825 6225
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	6825 2025 6975 2025
-Text Label 6975 2025 0    50   ~ 0
-IO0
 Text Label 2925 6575 3    50   ~ 0
 IO0
 Wire Wire Line
@@ -785,7 +777,6 @@ Wire Wire Line
 	2450 1850 2450 1950
 Wire Wire Line
 	2450 1450 2900 1450
-Connection ~ 2450 1450
 Wire Wire Line
 	2450 1550 2450 1450
 $Comp
@@ -799,7 +790,7 @@ F 3 "~" H 2450 1700 50  0001 C CNN
 	1    2450 1700
 	0    1    1    0   
 $EndComp
-Text Notes 925  1050 0    118  ~ 24
+Text Notes 1075 850  0    118  ~ 24
 DC POWER INPUT
 Wire Wire Line
 	2900 1950 2900 1875
@@ -821,42 +812,18 @@ F 3 "~" H 2900 1725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1450 1450 1725 1450
+	1450 1450 1650 1450
 $Comp
 L Device:Fuse F1
 U 1 1 5F84F56A
-P 1875 1450
-F 0 "F1" V 2072 1450 50  0000 C CNN
-F 1 "FUSE 2A" V 1981 1450 50  0000 C CNN
-F 2 "Fuse:Fuse_2920_7451Metric" V 1805 1450 50  0001 C CNN
-F 3 "~" H 1875 1450 50  0001 C CNN
-	1    1875 1450
+P 1800 1450
+F 0 "F1" V 1997 1450 50  0000 C CNN
+F 1 "FUSE 2A" V 1906 1450 50  0000 C CNN
+F 2 "Fuse:Fuse_2920_7451Metric" V 1730 1450 50  0001 C CNN
+F 3 "~" H 1800 1450 50  0001 C CNN
+	1    1800 1450
 	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	6825 3825 7025 3825
-Text Label 7025 3825 0    50   ~ 0
-MODBUS_RXD
-Text Label 7000 3625 0    50   ~ 0
-MODBUS_TXD
-Wire Wire Line
-	7000 3625 6825 3625
-Wire Wire Line
-	6825 3925 7025 3925
-Text Label 7025 3925 0    50   ~ 0
-MODBUS_EN
-Wire Wire Line
-	6825 4325 7025 4325
-Text Label 7025 4325 0    50   ~ 0
-GAS_AOUT
-Wire Wire Line
-	6825 2725 7000 2725
-Text Label 7000 2725 0    50   ~ 0
-SHARP_ILED
-Wire Wire Line
-	6825 4225 7025 4225
-Text Label 7025 4225 0    50   ~ 0
-SHARP_AOUT
 Text Notes 2200 5650 0    50   ~ 0
 FOR AUTOMATIC \nDOWNLOADING
 Wire Notes Line
@@ -872,61 +839,23 @@ Wire Wire Line
 Wire Wire Line
 	5625 2325 5475 2325
 Wire Wire Line
-	6825 2225 6975 2225
-Text Label 6975 2225 0    50   ~ 0
-IO2
-Wire Wire Line
-	6825 2525 6975 2525
-Text Label 6975 2525 0    50   ~ 0
-IO5
-Wire Wire Line
-	6825 2625 6975 2625
-Text Label 6975 2625 0    50   ~ 0
-IO12
-Wire Wire Line
 	6825 2825 6975 2825
-Text Label 6975 2825 0    50   ~ 0
-IO14
 Wire Wire Line
 	6825 2925 6975 2925
-Text Label 6975 2925 0    50   ~ 0
-IO15
 Wire Wire Line
 	6825 3025 6975 3025
-Text Label 6975 3025 0    50   ~ 0
-IO16
 Wire Wire Line
 	6825 3125 6975 3125
-Text Label 6975 3125 0    50   ~ 0
-IO17
 Wire Wire Line
 	6825 3225 6975 3225
-Text Label 6975 3225 0    50   ~ 0
-IO18
 Wire Wire Line
 	6825 3325 6975 3325
-Text Label 6975 3325 0    50   ~ 0
-IO19
-Wire Wire Line
-	6825 3425 6975 3425
-Text Label 6975 3425 0    50   ~ 0
-IO21
-Wire Wire Line
-	6825 3525 6975 3525
-Text Label 6975 3525 0    50   ~ 0
-IO22
 Wire Wire Line
 	6825 3725 6975 3725
-Text Label 6975 3725 0    50   ~ 0
-IO25
 Wire Wire Line
 	6825 4025 6975 4025
-Text Label 6975 4025 0    50   ~ 0
-IO32
 Wire Wire Line
 	6825 4125 6975 4125
-Text Label 6975 4125 0    50   ~ 0
-IO33
 Text Label 5475 2225 2    50   ~ 0
 IO36
 Text Label 5475 2325 2    50   ~ 0
@@ -1049,175 +978,10 @@ SHARP_ILED
 NoConn ~ 9825 4000
 Wire Wire Line
 	10325 3800 10525 3800
-Wire Wire Line
-	2025 1450 2450 1450
 Text Notes 1550 1575 0    50   ~ 0
 2920L200/24DR
 Text Label 4000 6150 0    50   ~ 0
 RESET
-Wire Wire Line
-	10700 1125 10925 1125
-$Comp
-L Connector_Generic:Conn_01x10 J5
-U 1 1 602EA9C5
-P 10500 1325
-F 0 "J5" H 10450 1925 50  0000 L CNN
-F 1 "EXT. IO 1" H 10300 1850 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 10500 1325 50  0001 C CNN
-F 3 "~" H 10500 1325 50  0001 C CNN
-	1    10500 1325
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x10 J4
-U 1 1 5F863ED0
-P 10075 1325
-F 0 "J4" H 10025 1925 50  0000 L CNN
-F 1 "EXT. IO 1" H 9875 1850 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 10075 1325 50  0001 C CNN
-F 3 "~" H 10075 1325 50  0001 C CNN
-	1    10075 1325
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9875 925  9675 925 
-Wire Wire Line
-	9675 1025 9875 1025
-$Comp
-L power:GND #PWR?
-U 1 1 5F977392
-P 9675 1025
-AR Path="/5F7FDDC6/5F977392" Ref="#PWR?"  Part="1" 
-AR Path="/5F977392" Ref="#PWR018"  Part="1" 
-F 0 "#PWR018" H 9675 775 50  0001 C CNN
-F 1 "GND" H 9680 852 50  0000 C CNN
-F 2 "" H 9675 1025 50  0001 C CNN
-F 3 "" H 9675 1025 50  0001 C CNN
-	1    9675 1025
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5FAEFAA1
-P 9675 850
-AR Path="/5E88A377/5FAEFAA1" Ref="#PWR?"  Part="1" 
-AR Path="/5FAEFAA1" Ref="#PWR017"  Part="1" 
-AR Path="/5F818C22/5FAEFAA1" Ref="#PWR?"  Part="1" 
-F 0 "#PWR017" H 9675 700 50  0001 C CNN
-F 1 "+5V" H 9690 1023 50  0000 C CNN
-F 2 "" H 9675 850 50  0001 C CNN
-F 3 "" H 9675 850 50  0001 C CNN
-	1    9675 850 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9675 850  9675 925 
-Text Label 10850 1625 0    50   ~ 0
-IO25
-Wire Wire Line
-	10700 1625 10850 1625
-Text Label 10850 1325 0    50   ~ 0
-IO39
-Text Label 10850 1225 0    50   ~ 0
-IO36
-Wire Wire Line
-	10700 1325 10850 1325
-Wire Wire Line
-	10700 1225 10850 1225
-Text Label 10850 1525 0    50   ~ 0
-IO33
-Wire Wire Line
-	10700 1525 10850 1525
-Text Label 10850 1425 0    50   ~ 0
-IO32
-Wire Wire Line
-	10700 1425 10850 1425
-Text Label 10850 1825 0    50   ~ 0
-IO12
-Wire Wire Line
-	10700 1725 10850 1725
-Text Label 10850 1725 0    50   ~ 0
-IO14
-Wire Wire Line
-	10700 1825 10850 1825
-Wire Wire Line
-	10750 1025 10700 1025
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5F92D010
-P 10750 1025
-AR Path="/5F7FDDC6/5F92D010" Ref="#PWR?"  Part="1" 
-AR Path="/5F92D010" Ref="#PWR023"  Part="1" 
-F 0 "#PWR023" H 10750 875 50  0001 C CNN
-F 1 "+3.3V" H 10765 1198 50  0000 C CNN
-F 2 "" H 10750 1025 50  0001 C CNN
-F 3 "" H 10750 1025 50  0001 C CNN
-	1    10750 1025
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10900 850  10900 925 
-$Comp
-L power:+5V #PWR?
-U 1 1 5F9147C6
-P 10900 850
-AR Path="/5E88A377/5F9147C6" Ref="#PWR?"  Part="1" 
-AR Path="/5F9147C6" Ref="#PWR024"  Part="1" 
-AR Path="/5F818C22/5F9147C6" Ref="#PWR?"  Part="1" 
-F 0 "#PWR024" H 10900 700 50  0001 C CNN
-F 1 "+5V" H 10915 1023 50  0000 C CNN
-F 2 "" H 10900 850 50  0001 C CNN
-F 3 "" H 10900 850 50  0001 C CNN
-	1    10900 850 
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F9147B9
-P 10925 1125
-AR Path="/5F7FDDC6/5F9147B9" Ref="#PWR?"  Part="1" 
-AR Path="/5F9147B9" Ref="#PWR025"  Part="1" 
-F 0 "#PWR025" H 10925 875 50  0001 C CNN
-F 1 "GND" V 10925 950 50  0000 C CNN
-F 2 "" H 10925 1125 50  0001 C CNN
-F 3 "" H 10925 1125 50  0001 C CNN
-	1    10925 1125
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	10700 925  10900 925 
-Wire Wire Line
-	9875 1225 9675 1225
-Text Label 9675 1225 2    50   ~ 0
-IO22
-Wire Wire Line
-	9675 1425 9875 1425
-Wire Wire Line
-	9875 1125 9675 1125
-Text Label 9675 1825 2    50   ~ 0
-IO15
-Text Label 9675 1325 2    50   ~ 0
-IO21
-Text Label 9675 1425 2    50   ~ 0
-IO19
-Text Label 9675 1525 2    50   ~ 0
-IO18
-Text Label 9675 1625 2    50   ~ 0
-IO17
-Text Label 9675 1725 2    50   ~ 0
-IO16
-Text Label 9675 1125 2    50   ~ 0
-IO2
-Wire Wire Line
-	9675 1325 9875 1325
-Wire Wire Line
-	9675 1525 9875 1525
-Wire Wire Line
-	9675 1725 9875 1725
-Wire Wire Line
-	9875 1625 9675 1625
-Wire Wire Line
-	9875 1825 9675 1825
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 61C8A534
@@ -1519,14 +1283,12 @@ AR Path="/5E3BAFCC/5F80490B" Ref="U?"  Part="1"
 AR Path="/5EE2F21A/5F80490B" Ref="U?"  Part="1" 
 AR Path="/5F7FDDC6/5F80490B" Ref="U?"  Part="1" 
 F 0 "U2" H 6300 4650 50  0000 C CNN
-F 1 "ESP32-WROOM-32E(8MB)" H 6750 4575 50  0000 C CNN
+F 1 "ESP32-WROOM-32E(8MB)" H 6750 4725 50  0000 C CNN
 F 2 "RF_Module:ESP32-WROOM-32" H 6225 1725 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 5925 3275 50  0001 C CNN
 	1    6225 3225
 	1    0    0    -1  
 $EndComp
-Text Label 7000 2425 0    50   ~ 0
-IO4
 Wire Wire Line
 	7000 2425 6825 2425
 $Comp
@@ -1555,4 +1317,180 @@ U 61DFC659
 F0 "Display" 50
 F1 "Display ILI.sch" 50
 $EndSheet
+Wire Wire Line
+	1950 1450 2050 1450
+Text Label 7225 3525 0    50   ~ 0
+SCL
+Text Label 7225 3425 0    50   ~ 0
+SDA
+Text Label 7300 4225 0    39   ~ 0
+SHARP_AOUT
+Text Label 7000 2725 0    50   ~ 0
+SHARP_ILED
+Text Label 7300 4325 0    50   ~ 0
+GAS_AOUT
+Text Label 7200 3925 0    50   ~ 0
+MODBUS_EN
+Text Label 7000 3625 0    50   ~ 0
+MODBUS_TXD
+Text Label 7200 3825 0    50   ~ 0
+MODBUS_RXD
+Text Label 6975 2125 0    50   ~ 0
+UART0_TXD
+Text Label 6975 2325 0    50   ~ 0
+UART0_RXD
+Wire Wire Line
+	6825 3625 7475 3625
+Wire Wire Line
+	6825 3825 7475 3825
+Wire Wire Line
+	6825 3925 7475 3925
+Wire Wire Line
+	6825 4325 7475 4325
+Wire Wire Line
+	6825 2725 7475 2725
+Wire Wire Line
+	6825 4225 7475 4225
+Wire Wire Line
+	6825 3525 7475 3525
+Wire Wire Line
+	6825 3425 7475 3425
+Text GLabel 6975 4125 2    50   Input ~ 0
+TFT_CS
+Text GLabel 6975 4025 2    50   Input ~ 0
+TFT_RST
+Text GLabel 7000 2425 2    50   Input ~ 0
+TFT_WR
+Text GLabel 7000 2525 2    50   Input ~ 0
+TFT_RD
+NoConn ~ 6825 2025
+NoConn ~ 6825 2225
+Wire Wire Line
+	6825 2525 7000 2525
+Text GLabel 6975 3725 2    50   Input ~ 0
+DB1
+Text GLabel 7675 3500 2    50   Input ~ 0
+DB0
+NoConn ~ 6825 2625
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 61C79631
+P 10400 1400
+F 0 "J?" H 10372 1282 50  0000 R CNN
+F 1 "I2C extended" H 10372 1373 50  0000 R CNN
+F 2 "" H 10400 1400 50  0001 C CNN
+F 3 "~" H 10400 1400 50  0001 C CNN
+	1    10400 1400
+	-1   0    0    -1  
+$EndComp
+Text Label 9950 1400 0    50   ~ 0
+SCL
+Text Label 9950 1500 0    50   ~ 0
+SDA
+Wire Wire Line
+	9550 1400 10200 1400
+Wire Wire Line
+	9550 1500 10200 1500
+Wire Wire Line
+	10200 1600 10025 1600
+Text Label 9950 1300 0    50   ~ 0
+VCC
+$Comp
+L power:GND #PWR?
+U 1 1 61C95AB2
+P 10025 1600
+AR Path="/5F7FDDC6/61C95AB2" Ref="#PWR?"  Part="1" 
+AR Path="/61C95AB2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10025 1350 50  0001 C CNN
+F 1 "GND" H 10030 1427 50  0000 C CNN
+F 2 "" H 10025 1600 50  0001 C CNN
+F 3 "" H 10025 1600 50  0001 C CNN
+	1    10025 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 10025 1600
+Wire Wire Line
+	10025 1600 9550 1600
+Text Label 9950 1600 0    50   ~ 0
+GND
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 61C99AC0
+P 9550 1150
+F 0 "JP?" V 9550 1218 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 9595 1218 50  0001 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 9550 1150 50  0001 C CNN
+F 3 "~" H 9550 1150 50  0001 C CNN
+	1    9550 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 61C9B3AB
+P 9800 1150
+F 0 "JP?" V 9800 1218 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 9845 1218 50  0001 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 9800 1150 50  0001 C CNN
+F 3 "~" H 9800 1150 50  0001 C CNN
+	1    9800 1150
+	0    1    1    0   
+$EndComp
+Connection ~ 9800 1300
+Wire Wire Line
+	9800 1300 10200 1300
+Wire Wire Line
+	9550 1300 9800 1300
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61C9C7C1
+P 9550 1000
+AR Path="/5F7FDDC6/61C9C7C1" Ref="#PWR?"  Part="1" 
+AR Path="/61C9C7C1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9550 850 50  0001 C CNN
+F 1 "+3.3V" H 9565 1173 50  0000 C CNN
+F 2 "" H 9550 1000 50  0001 C CNN
+F 3 "" H 9550 1000 50  0001 C CNN
+	1    9550 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61C9DCD6
+P 9800 1000
+AR Path="/5E88A377/61C9DCD6" Ref="#PWR?"  Part="1" 
+AR Path="/61C9DCD6" Ref="#PWR?"  Part="1" 
+AR Path="/5F818C22/61C9DCD6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9800 850 50  0001 C CNN
+F 1 "+5V" H 9815 1173 50  0000 C CNN
+F 2 "" H 9800 1000 50  0001 C CNN
+F 3 "" H 9800 1000 50  0001 C CNN
+	1    9800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 61CA3FF0
+P 2250 1350
+F 0 "SW?" H 2250 1635 50  0000 C CNN
+F 1 "SW_SPDT" H 2250 1544 50  0000 C CNN
+F 2 "" H 2250 1350 50  0001 C CNN
+F 3 "~" H 2250 1350 50  0001 C CNN
+	1    2250 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 2450 1450
+Wire Wire Line
+	2050 1450 2050 1350
+Text GLabel 6975 3325 2    50   Input ~ 0
+DB2
+Text GLabel 6975 3225 2    50   Input ~ 0
+DB3
+Text GLabel 6975 3125 2    50   Input ~ 0
+DB4
+Text GLabel 6975 3025 2    50   Input ~ 0
+DB5
+Text GLabel 6975 2925 2    50   Input ~ 0
+DB6
+Text GLabel 6975 2825 2    50   Input ~ 0
+DB7
 $EndSCHEMATC
