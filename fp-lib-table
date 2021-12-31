@@ -1,4 +1,0 @@
-(fp_lib_table
-  (lib (name "connector")(type "KiCad")(uri "D:/Freelance Projects/Tommy D 20.12.21/ESP32_BoardV1.1_18_02_2021 (1)/ESP32_BoardV1.1/library/SM05B-SRSS-TB_LF__SN_")(options "")(descr ""))
-  (lib (name "Library")(type "KiCad")(uri "${KIPRJMOD}/Library/Library.pretty")(options "")(descr ""))
-)

@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name ESP32_BoardV1-rescue)(type Legacy)(uri ${KIPRJMOD}/ESP32_BoardV1-rescue.lib)(options "")(descr ""))
-  (lib (name Connector_5pin)(type Legacy)(uri "D:/Freelance Projects/Tommy D 20.12.21/ESP32_BoardV1.1_18_02_2021 (1)/ESP32_BoardV1.1/library/SM05B-SRSS-TB_LF__SN_/SM05B-SRSS-TB_LF__SN_.lib")(options "")(descr ""))
-)
