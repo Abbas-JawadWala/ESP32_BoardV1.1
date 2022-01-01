@@ -1,0 +1,33 @@
+Component Count:,40,,,,
+Ref,Qnty,Value,Description,Manufacturer,Manuactrer Part Number
+"C1, ",1,10uF,CAP ALUM 10UF 20% 16V SMD,Cornell Dubilier Electronics (CDE),AVE106M16A12T-F
+"C2, ",1,100uF,CAP ALUM 100UF 20% 10V SMD,Würth Elektronik,865080243007
+"C3, ",1,22uF,CAP ALUM 22UF 20% 10V SMD,Nichicon,UWT1A220MCL1GB
+"C4, C9, ",2,10uF,CAP CER 10UF 6.3V X5R 0402,Murata Electronics,GRM155R60J106ME15D
+"C5, C6, C7, C8, C10, ",5,0.1uF,CAP CER 0.1UF 6.3V X5R 0402,KYOCERA AVX,04026D104KAT2A
+C11,1,4.7uF,CAP CER 4.7UF 10V X5R 0402,TDK Corporation,C1005X5R1A475K050BC
+C12,1,1nF,CAP CER 1000PF 10V X7R 0402,KEMET,0402ZC102KAT2A
+C13,1,1uF,CAP CER 1UF 10V X6S 0402,TDK Corporation,C1005X6S1A105K050BC
+"D1, ",1,SMBJ5,TVS DIODE 5VWM 9.2VC SMB,Diodes Incorporated,SMBJ5.0CA-13-F
+"D2, ",1,SM712,"TVS DIODE 12V/7V, 20V/12V SOT23",MDD,SM712
+D3,1,RB160MM-90TR,DIODE SCHOTTKY 90V 1A PMDU,Rohm Semiconductor,RB160MM-90TR
+"F1, ",1,FUSE 2A,FUSE BOARD MOUNT 2A 125VAC 63VDC,Bel Fuse Inc.,C1Q 2
+"H1, H2, H3, H4, ",4,MountingHole_Pad,Mounting Hole with connection,N/C,N/C
+"J1, ",1,Barrel_Jack_Switch,CONN PWR JACK 1.3X3.4MM SOLDER,CUI Devices,PJ-030DH-SMT-TR
+"J2, ",1,ISP,"Connector Header Through Hole 6 position 0.100"" (2.54mm)",METZ CONNECT USA Inc.,PR20206VBNN
+"J3, ",1,GPIO expanded,"Connector Header Surface Mount, Right Angle 4 position 0.039"" (1.00mm)",JST Sales America Inc.,SM04B-SRSS-TB(LF)(SN)
+"J4, ",1,sensor,"Connector Header Surface Mount, Right Angle 5 position 0.039"" (1.00mm)",JST Sales America Inc.,SM05B-SRSS-TB(LF)(SN)
+"J5, ",1,I2C extended,"Connector Header Surface Mount, Right Angle 4 position 0.039"" (1.00mm)",JST Sales America Inc.,SM04B-SRSS-TB(LF)(SN)
+"J6, ",1,MODBUS RTU,"Connector Header Surface Mount, Right Angle 3 position 0.039"" (1.00mm)",JST Sales America Inc.,SM03B-SRSS-TB(LF)(SN)
+"J7, ",1,Display,CONN FFC VERT 40POS 0.50MM SMD,Hirose Electric Co Ltd,FH12-40S-0.5SVA(55)
+L1,1,"4,7uF",FIXED IND 4.7UH 1.6A 200MOHM SMD,TDK Corporation,TFM252012ALMA4R7MTAA
+"Q1, ",1,UMH3N,"600mA IC, 40V Vce, Dual NPN/NPN Transistors, SOT-363",NXP USA Inc.,PMBT2222AYS115
+"R1, R3, R4, R5, R2, R9, R10,R112",8,10K,RES 10K OHM 1% 1/16W 0402,Stackpole Electronics Inc,RMCF0402FT10K0
+"R6, ",1,120R,RES 120 OHM 1% 1/16W 0402,TE Connectivity Passive Product,CRGCQ0402F120R
+"R7, R8,",2,5K,RES 5.1K OHM 1% 1/16W 0402,Stackpole Electronics Inc,RMCF0402FT5K10
+R11,1,5R,RES 4.99 OHM 1% 1/16W 0402,Stackpole Electronics Inc,RMCF0402FT4R99
+"SW1, ",1,SW_SPDT,SWITCH SLIDE SPDT 200MA 30V,TE Connectivity ALCOSWITCH Switches,1825232-1
+"U1, ",1,AZ1117-3.3,IC REG LINEAR 3.3V 1A SOT223,Diodes Incorporated,AZ1117IH-3.3TRG1
+"U2, ",1,ESP32-WROOM-32E(8MB),WIFI MODULE 64 MBITS SPI FLASH,Espressif Systems,ESP32-WROOM-32E(8MB)
+"U3, ",1,MAX3485,"True RS-485/RS-422, 10Mbps, Slew-Rate Limited, with low-power shutdown, with receiver/driver enable, 32 receiver drive capacitity, DIP-8 and SOIC-8",Analog Devices Inc./Maxim Integrated,MAX3485CSA+T
+U4,1,TPS61169DCKR,IC LED DRVR RGLTR DIM 1.8A SC70,Texas Instruments,TPS61169DCKR
