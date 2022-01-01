@@ -75,7 +75,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "GERBER FIles/")
+      (outputdirectory "DFM data 1.1.22/")
     )
   )
 
